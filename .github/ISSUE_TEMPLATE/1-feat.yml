@@ -1,0 +1,22 @@
+name: Feat
+description: 새 기능
+title: "feat: "
+labels: ["🥸 feat"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: 무엇을
+      description: 할 일을 한두 줄로 적어 주세요
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: 왜
+  - type: textarea
+    id: tasks
+    attributes:
+      label: 할 일
+      value: |
+        - [ ] 
