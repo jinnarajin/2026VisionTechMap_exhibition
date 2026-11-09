@@ -31,6 +31,7 @@ gh issue develop 12 --name feat/12-sphere-drag --checkout
 
 ## PR
 
+- 서로 배우며 리뷰할 수 있도록 PR은 작은 기능 하나 단위로 최대한 작게 만듭니다. 커질 것 같으면 이슈부터 나눕니다.
 - 제목은 `타입: 무엇을 했는지` 형식입니다. Squash 머지하면 이 제목이 `main`의 커밋 메시지가 됩니다.
 - 본문의 `Closes #번호`로 머지 시 이슈가 자동으로 닫힙니다. 화면이 바뀌면 스크린샷을 붙입니다.
 - 작성자를 뺀 팀원 전원에게 리뷰가 자동 요청됩니다 (`.github/CODEOWNERS`). Draft PR은 Ready로 바꿀 때 요청됩니다.
