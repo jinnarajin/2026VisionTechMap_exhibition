@@ -1,0 +1,10 @@
+# macOS
+.DS_Store
+
+# Xcode 개인 설정
+xcuserdata/
+
+# 빌드 결과물
+DerivedData/
+build/
+.build/
