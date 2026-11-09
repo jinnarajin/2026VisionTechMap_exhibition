@@ -32,8 +32,8 @@ SwiftUI와 RealityKit을 기반으로, 기능별로 코드를 분리하는 Featu
             ▼                ▼                ▼
        Starry Night       Ocean View     Rainy Greenery
             │                │                │
-      ├─ Time of Day    ├─ Wind          ├─ Rain
-      ├─ Constellation  └─ Time of Day   └─ Fog
+      ├─ Time of Day    └─ Time of Day   ├─ Rain
+      ├─ Constellation                   └─ Fog
       └─ Moon Phase
 
                        Shared Systems
@@ -46,7 +46,7 @@ SwiftUI와 RealityKit을 기반으로, 기능별로 코드를 분리하는 Featu
 - **ExperienceCoordinator**: 전체 전시 흐름과 환경 간 전환을 관리합니다.
 - **Environment Interface**: 각 환경이 공통적으로 따르는 로딩, 활성화 및 정리 규칙을 정의합니다.
 - **Environment**: 해당 환경의 전체 장면을 구성하고 세부 기능을 연결합니다.
-- **Interaction / Effect Controller**: 별자리 생성, 달의 위상 변화, 바람, 비와 안개 등 개별 인터랙션 및 효과를 담당합니다.
+- **Interaction / Effect Controller**: 별자리 생성, 달의 위상 변화, 비와 안개 등 개별 인터랙션 및 효과를 담당합니다.
 - **Shared Systems**: 커튼, 포털, 창문, 오디오 등 여러 환경에서 공통으로 사용하는 기능을 관리합니다.
 
 Environment 하나에서 모든 인터랙션을 직접 처리하지 않고, 기능별 Controller나 System으로 책임을 분리합니다.
@@ -96,7 +96,6 @@ Project/
 ### Ocean View
 
 - 창문 너머 풍경 감상
-- 바람 세기 조절
 - 시간대 조절 (새벽~밤)
 
 ### Rainy Greenery
